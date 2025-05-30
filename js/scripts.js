@@ -20,6 +20,7 @@ let pokemonRepository = (function()  {
       }
    };
 })();
+console.log(pokemonRepository.getAll()); // []
 
 
 // For loop to print out the details of each pokemon 
@@ -31,7 +32,7 @@ let pokemonRepository = (function()  {
  pokemonRepository.getAll().forEach(function(pokemon) {
    document.write("<p>" + `${pokemon.name}: ${pokemon.Height}`);
  });
- 
+
  // For loop to print out which pokemon is the biggest
  for (  let i = 0; i < pokemonList.length;  i++) {
    if (pokemonList[i].Height >6) {
